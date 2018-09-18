@@ -182,40 +182,38 @@ if (EMSCRIPTEN)
             "Python required for Emscripten builds, but cmake cannot find it.")
   endif ()
 else ()
-  if (ENABLE_TESTS)
-    if (MSVC)
-      # Default runtime selected by cmake collides with Googletest settings,
-      # just force all Draco builds to be static (instead of dll/msvcrt).
-      include("${draco_root}/cmake/msvc_runtime.cmake")
-    endif ()
-    # Googletest defaults.
-    set(GTEST_SOURCE_DIR
-        "${draco_root}/../googletest" CACHE STRING
-        "Path to googletest source directory")
-    set(GTEST_BUILD_DIR
-        "${draco_build_dir}/googletest" CACHE STRING
-        "Path to directory where googletest will be configured and built.")
-
-    # Confirm Googletest is where expected.
-    if (NOT EXISTS "${GTEST_SOURCE_DIR}/CMakeLists.txt")
-      set(ENABLE_TESTS OFF)
-      message("Tests disabled: Google test CMakeLists.txt does not exist.")
-    else ()
-      if (APPLE AND BUILD_SHARED_LIBS)
-        # Silence an RPATH warning emitted during processing of Googletest
-        # cmake files.
-        set(CMAKE_MACOSX_RPATH 1)
-      endif ()
-
-      set(DRACO_TEST_DATA_DIR "${draco_root}/testdata")
-      configure_file("${draco_root}/cmake/draco_test_config.h.cmake"
-                     "${draco_build_dir}/testing/draco_test_config.h")
-      add_subdirectory("${GTEST_SOURCE_DIR}" "${GTEST_BUILD_DIR}"
-                       EXCLUDE_FROM_ALL)
-    endif ()
-
-    include_directories("${GTEST_SOURCE_DIR}")
+  if (MSVC)
+    # Default runtime selected by cmake collides with Googletest settings,
+    # just force all Draco builds to be static (instead of dll/msvcrt).
+    include("${draco_root}/cmake/msvc_runtime.cmake")
   endif ()
+  # Googletest defaults.
+  set(GTEST_SOURCE_DIR
+      "${draco_root}/lib/googletest" CACHE STRING
+      "Path to googletest source directory")
+  set(GTEST_BUILD_DIR
+      "${draco_build_dir}/googletest" CACHE STRING
+      "Path to directory where googletest will be configured and built.")
+
+  # Confirm Googletest is where expected.
+  if (NOT EXISTS "${GTEST_SOURCE_DIR}/CMakeLists.txt")
+    set(ENABLE_TESTS OFF)
+    message("Tests disabled: Google test CMakeLists.txt does not exist.")
+  else ()
+    if (APPLE AND BUILD_SHARED_LIBS)
+      # Silence an RPATH warning emitted during processing of Googletest
+      # cmake files.
+      set(CMAKE_MACOSX_RPATH 1)
+    endif ()
+
+    set(DRACO_TEST_DATA_DIR "${draco_root}/testdata")
+    configure_file("${draco_root}/cmake/draco_test_config.h.cmake"
+                   "${draco_build_dir}/testing/draco_test_config.h")
+    add_subdirectory("${GTEST_SOURCE_DIR}" "${GTEST_BUILD_DIR}"
+                     EXCLUDE_FROM_ALL)
+  endif ()
+
+  include_directories("${GTEST_SOURCE_DIR}")
 endif ()
 
 # Draco source file listing variables.
@@ -1097,12 +1095,10 @@ else ()
                  "${draco_src_root}/tools/draco_encoder.cc")
   target_link_libraries(draco_encoder PRIVATE draco)
 
-  if (ENABLE_TESTS)
-    add_executable(draco_tests ${draco_test_sources})
-    include_directories("${draco_build_dir}"
-                        "${GTEST_SOURCE_DIR}/googletest/include")
-    target_link_libraries(draco_tests draco gtest)
-  endif ()
+  add_executable(draco_tests ${draco_test_sources})
+  include_directories("${draco_build_dir}"
+                      "${GTEST_SOURCE_DIR}/googletest/include")
+  target_link_libraries(draco_tests draco gtest)
 
   # Collect all of the header files in the tree, and add an install rule for
   # each.
