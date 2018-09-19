@@ -12,14 +12,15 @@
       <config projectName="draco" targetName="gmock_main" />
       <config projectName="draco" targetName="draco_compression_attributes_enc" />
       <config projectName="draco" targetName="draco_dec_config" />
+      <config projectName="draco" targetName="play" />
       <config projectName="draco" targetName="draco_animation" />
       <config projectName="draco" targetName="draco_compression_bit_coders" />
       <config projectName="draco" targetName="draco_compression_mesh_enc" />
       <config projectName="draco" targetName="dracoenc" />
       <config projectName="draco" targetName="gtest" />
       <config projectName="draco" targetName="draco_encoder" />
-      <config projectName="draco" targetName="draco_tests" />
       <config projectName="draco" targetName="gmock" />
+      <config projectName="draco" targetName="draco_tests" />
       <config projectName="draco" targetName="draco_compression_attributes_pred_schemes_enc" />
       <config projectName="draco" targetName="draco_attributes" />
       <config projectName="draco" targetName="draco_animation_enc" />
@@ -42,23 +43,21 @@
       <config projectName="draco" targetName="draco_compression_attributes_pred_schemes_dec" />
     </generated>
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d97371e7-e546-453d-8740-e5cb48f7d80d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/draco.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/googletest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/john.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/play.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testdata/cube_custom.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/draco/io/obj_decoder.cc" beforeDir="false" afterPath="$PROJECT_DIR$/src/draco/io/obj_decoder.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/draco/io/obj_decoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/draco/io/obj_decoder.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,27 +69,183 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-47">
-              <caret line="184" column="11" selection-start-line="184" selection-start-column="11" selection-end-line="184" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.36870503">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="obj_decoder_test.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder_test.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-8">
+                  <caret line="80" selection-start-line="80" selection-end-line="80" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="686">
+                  <caret line="1182" selection-start-line="1182" selection-end-line="1182" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="play.cpp" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/play.cpp">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="126">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                  <folding>
+                    <element signature="e#0#19#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cube_att.obj" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/testdata/cube_att.obj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="360">
+                  <caret line="20" selection-start-line="20" selection-end-line="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="cube_custom.obj" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/testdata/cube_custom.obj">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="mesh_io.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/io/mesh_io.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
+                  <folding>
+                    <element signature="e#599#628#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="obj_decoder.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="382" selection-start-line="382" selection-end-line="382" />
+                  <folding>
+                    <element signature="e#0#36#0" />
+                    <element signature="e#2162#2336#0" />
+                    <element signature="e#2338#2593#0" />
+                    <element signature="e#8960#9132#0" />
+                    <element signature="e#9839#10662#0" />
+                    <element signature="e#10664#11466#0" />
+                    <element signature="e#14540#15417#0" />
+                    <element signature="e#15419#16355#0" />
+                    <element signature="e#16357#17137#0" />
+                    <element signature="e#17139#18481#0" />
+                    <element signature="e#21013#22064#0" />
+                    <element signature="e#22066#22743#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="true">
+            <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="898" selection-start-line="898" selection-end-line="898" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="unique_ptr.h" pinned="false" current-in-tab="false">
+            <entry file="file:///usr/include/c++/5/bits/unique_ptr.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="342">
+                  <caret line="304" selection-start-line="304" selection-end-line="304" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="point_cloud.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/point_cloud/point_cloud.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1008">
+                  <caret line="107" selection-start-line="107" selection-end-line="107" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="point_cloud.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/point_cloud/point_cloud.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="515">
+                  <caret line="228" selection-start-line="228" selection-end-line="228" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="point_attribute.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/attributes/point_attribute.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="461">
+                  <caret line="195" column="59" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="point_attribute.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/attributes/point_attribute.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="231">
+                  <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="geometry_attribute.cc" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/attributes/geometry_attribute.cc">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="423">
+                  <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="obj_decoder.h" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="479">
+                  <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>draco_test</find>
       <find>googletest</find>
+      <find>ENABLE_TESTS</find>
+      <find>cube_att_partial.obj</find>
+      <find>draco_enc</find>
+      <find>draco_decoder</find>
+      <find>io_s</find>
+      <find>draco_encoder</find>
+      <find>extra qualification</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -104,6 +259,11 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/play.cpp" />
+        <option value="$PROJECT_DIR$/src/draco/io/obj_decoder.h" />
+        <option value="$PROJECT_DIR$/testdata/cube_att.obj" />
+        <option value="$PROJECT_DIR$/testdata/cube_custom.obj" />
+        <option value="$PROJECT_DIR$/src/draco/io/obj_decoder.cc" />
       </list>
     </option>
   </component>
@@ -120,7 +280,8 @@
       <path value="$PROJECT_DIR$/javascript/npm/draco_animation/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="66" />
     <option name="y" value="-33" />
     <option name="width" value="1282" />
@@ -139,6 +300,11 @@
               <item name="draco" type="b2602c69:ProjectViewProjectNode" />
               <item name="draco" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="draco" type="b2602c69:ProjectViewProjectNode" />
+              <item name="draco" type="462c0819:PsiDirectoryNode" />
+              <item name="testdata" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -150,7 +316,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/testdata" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -164,45 +335,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="draco_tests" EXPLICIT_BUILD_TARGET_NAME="all" />
-    <configuration name="draco" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco" CONFIG_NAME="Debug" />
-    <configuration name="draco_animation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation" CONFIG_NAME="Debug" />
-    <configuration name="draco_animation_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_animation_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_attributes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_attributes" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_attributes_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_attributes_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_attributes_pred_schemes_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_pred_schemes_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_attributes_pred_schemes_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_pred_schemes_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_bit_coders" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_bit_coders" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_decode" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_decode" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_encode" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_encode" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_entropy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_entropy" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_mesh_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_mesh_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_mesh_traverser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_traverser" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_point_cloud_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_point_cloud_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_compression_point_cloud_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_point_cloud_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_core" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_core" CONFIG_NAME="Debug" />
-    <configuration name="draco_dec_config" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_dec_config" CONFIG_NAME="Debug" />
-    <configuration name="draco_decoder" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_decoder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="draco_decoder" />
-    <configuration name="draco_enc_config" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_enc_config" CONFIG_NAME="Debug" />
-    <configuration name="draco_encoder" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_encoder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="draco_encoder" />
-    <configuration name="draco_io" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_io" CONFIG_NAME="Debug" />
-    <configuration name="draco_mesh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_mesh" CONFIG_NAME="Debug" />
-    <configuration name="draco_metadata" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata" CONFIG_NAME="Debug" />
-    <configuration name="draco_metadata_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_metadata_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata_enc" CONFIG_NAME="Debug" />
-    <configuration name="draco_point_cloud" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_point_cloud" CONFIG_NAME="Debug" />
-    <configuration name="draco_points_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_points_dec" CONFIG_NAME="Debug" />
-    <configuration name="draco_points_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_points_enc" CONFIG_NAME="Debug" />
-    <configuration name="dracodec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="dracodec" CONFIG_NAME="Debug" />
-    <configuration name="dracoenc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="dracoenc" CONFIG_NAME="Debug" />
+  <component name="RunManager" selected="Application.play">
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="draco" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_animation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_animation_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_animation_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_animation_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_attributes" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_attributes" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_attributes_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_attributes_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_attributes_pred_schemes_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_pred_schemes_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_attributes_pred_schemes_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_attributes_pred_schemes_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_bit_coders" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_bit_coders" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_decode" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_decode" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_encode" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_encode" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_entropy" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_entropy" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_mesh_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_mesh_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_mesh_traverser" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_mesh_traverser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_point_cloud_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_point_cloud_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_compression_point_cloud_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_compression_point_cloud_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_core" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_core" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_dec_config" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_dec_config" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_decoder" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_decoder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_enc_config" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_enc_config" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_encoder" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_encoder" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_io" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_io" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_mesh" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_mesh" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_metadata" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_metadata_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_metadata_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_metadata_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_point_cloud" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_point_cloud" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_points_dec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_points_dec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_points_enc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_points_enc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="draco_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="draco_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="dracodec" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="dracodec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
+    <configuration name="dracoenc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="dracoenc" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="gmock" CONFIG_NAME="Debug" />
     <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="gmock_main" CONFIG_NAME="Debug" />
     <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="gtest" CONFIG_NAME="Debug" />
     <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="gtest_main" CONFIG_NAME="Debug" />
+    <configuration name="play" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="draco" TARGET_NAME="play" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="draco" RUN_TARGET_NAME="play" />
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.draco" />
@@ -236,8 +409,10 @@
       <item itemvalue="Application.draco_point_cloud" />
       <item itemvalue="Application.draco_points_dec" />
       <item itemvalue="Application.draco_points_enc" />
+      <item itemvalue="Application.draco_tests" />
       <item itemvalue="Application.dracodec" />
       <item itemvalue="Application.dracoenc" />
+      <item itemvalue="Application.play" />
       <item itemvalue="Application.gmock" />
       <item itemvalue="Application.gmock_main" />
       <item itemvalue="Application.gtest" />
@@ -254,27 +429,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537273071434</updated>
-      <workItem from="1537273072589" duration="1248000" />
+      <workItem from="1537273072589" duration="9804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1248000" />
+    <option name="totallyTimeSpent" value="9804000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="2562" height="1382" extended-state="6" />
+    <frame x="-1" y="-4" width="2562" height="1382" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12337407" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12337407" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.3296" />
       <window_info anchor="bottom" id="CMake" weight="0.3296" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3296" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3296" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.3296" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3296" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,6 +464,100 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>247</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>235</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>231</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>381</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>389</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc</url>
+          <line>418</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="12" />
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>this-&gt;out_point_cloud_-&gt;attributes_[3].get()-&gt;indices_map_.vector_[3].value_</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this-&gt;out_point_cloud_-&gt;attributes_[2].get()-&gt;indices_map_.vector_[3].value_</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this-&gt;out_point_cloud_-&gt;attributes_[1].get()-&gt;indices_map_.vector_[3].value_</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this-&gt;out_point_cloud_-&gt;attributes_[0].get()-&gt;indices_map_.vector_[3].value_</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this-&gt;out_point_cloud_-&gt;attributes_[0].get()-&gt;indices_map_.vector_[2].value_</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>num_attributes()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>indices_map_[i]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>value_map[indices_map_[i]]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>indices_map_,size()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/testdata/invalid/complex_poly.obj">
@@ -332,12 +601,155 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder_test.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/tools/draco_encoder.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="266" column="27" selection-start-line="266" selection-start-column="27" selection-end-line="266" selection-end-column="27" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-47">
-          <caret line="184" column="11" selection-start-line="184" selection-start-column="11" selection-end-line="184" selection-end-column="11" />
+        <state relative-caret-position="686">
+          <caret line="1182" selection-start-line="1182" selection-end-line="1182" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/cube_att.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/attributes/geometry_indices.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="26" column="57" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/attributes/geometry_attribute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="266" column="18" selection-start-line="266" selection-start-column="10" selection-end-line="266" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/play.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="127" column="14" selection-start-line="127" selection-start-column="14" selection-end-line="127" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/cube_custom.obj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/attributes/geometry_attribute.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/attributes/point_attribute.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="146" column="51" selection-start-line="146" selection-start-column="51" selection-end-line="146" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/io/mesh_io.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#599#628#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/attributes/point_attribute.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="195" column="59" selection-start-line="195" selection-start-column="59" selection-end-line="195" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/point_cloud/point_cloud.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="228" selection-start-line="228" selection-end-line="228" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/point_cloud/point_cloud.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/unique_ptr.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/draco/io/obj_decoder.cc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="382" selection-start-line="382" selection-end-line="382" />
+          <folding>
+            <element signature="e#0#36#0" />
+            <element signature="e#2162#2336#0" />
+            <element signature="e#2338#2593#0" />
+            <element signature="e#8960#9132#0" />
+            <element signature="e#9839#10662#0" />
+            <element signature="e#10664#11466#0" />
+            <element signature="e#14540#15417#0" />
+            <element signature="e#15419#16355#0" />
+            <element signature="e#16357#17137#0" />
+            <element signature="e#17139#18481#0" />
+            <element signature="e#21013#22064#0" />
+            <element signature="e#22066#22743#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="898" selection-start-line="898" selection-end-line="898" />
         </state>
       </provider>
     </entry>

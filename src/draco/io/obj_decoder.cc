@@ -28,11 +28,13 @@ ObjDecoder::ObjDecoder()
       num_obj_faces_(0),
       num_positions_(0),
       num_tex_coords_(0),
+      num_tex_coords1_(0),
       num_normals_(0),
       num_materials_(0),
       last_sub_obj_id_(0),
       pos_att_id_(-1),
       tex_att_id_(-1),
+      tex_att1_id_(-1),
       norm_att_id_(-1),
       material_att_id_(-1),
       sub_obj_att_id_(-1),
@@ -141,6 +143,13 @@ Status ObjDecoder::DecodeInternal() {
             sizeof(float) * 2, 0);
     tex_att_id_ = out_point_cloud_->AddAttribute(va, use_identity_mapping,
                                                  num_tex_coords_);
+  }
+  if (num_tex_coords1_ > 0) {
+    GeometryAttribute va;
+    va.Init(GeometryAttribute::TEX_COORD, nullptr, 2, DT_FLOAT32, false,
+            sizeof(float) * 2, 0);
+    tex_att1_id_ = out_point_cloud_->AddAttribute(va, use_identity_mapping,
+                                                  num_tex_coords1_);
   }
   if (num_normals_ > 0) {
     GeometryAttribute va;
@@ -270,6 +279,8 @@ bool ObjDecoder::ParseDefinition(Status *status) {
     return true;
   if (ParseTexCoord(status))
     return true;
+  if (ParseTexCoord1(status))
+    return true;
   if (ParseFace(status))
     return true;
   if (ParseMaterial(status))
@@ -340,11 +351,11 @@ bool ObjDecoder::ParseNormal(Status *status) {
 }
 
 bool ObjDecoder::ParseTexCoord(Status *status) {
-  std::array<char, 2> c;
+  std::array<char, 3> c;
   if (!buffer()->Peek(&c)) {
     return false;
   }
-  if (c[0] != 'v' || c[1] != 't')
+  if (c[0] != 'v' || c[1] != 't' || c[2] == '1')
     return false;
   // Texture coord definition found!
   buffer()->Advance(2);
@@ -363,6 +374,36 @@ bool ObjDecoder::ParseTexCoord(Status *status) {
         ->SetAttributeValue(AttributeValueIndex(num_tex_coords_), val);
   }
   ++num_tex_coords_;
+  parser::SkipLine(buffer());
+  return true;
+}
+
+bool ObjDecoder::ParseTexCoord1(Status *status) {
+  std::array<char, 3> c;
+  if (!buffer()->Peek(&c)) {
+    return false;
+  }
+
+  if (c[0] != 'v' || c[1] != 't' || c[2] != '1')
+    return false;
+  // Texture coord definition found!
+  buffer()->Advance(3);
+  if (!counting_mode_) {
+    // Parse two float numbers for the texture coordinate 1.
+    float val[2];
+    for (int i = 0; i < 2; ++i) {
+      parser::SkipWhitespace(buffer());
+      if (!parser::ParseFloat(buffer(), val + i)) {
+        *status = Status(Status::ERROR, "Failed to parse a float number");
+        // The definition is processed so return true.
+        return true;
+      }
+      std::cout << val[i] << std::endl;
+    }
+    out_point_cloud_->attribute(tex_att1_id_)
+        ->SetAttributeValue(AttributeValueIndex(num_tex_coords1_), val);
+  }
+  ++num_tex_coords1_;
   parser::SkipLine(buffer());
   return true;
 }
@@ -591,6 +632,22 @@ void ObjDecoder::MapPointToVertexIndices(
       // Texture index not provided but expected. Insert 0 entry as the
       // default value.
       out_point_cloud_->attribute(tex_att_id_)
+          ->SetPointMapEntry(vert_id, AttributeValueIndex(0));
+    }
+  }
+
+  if (tex_att1_id_ >= 0) {
+    if (indices[1] > 0) {
+      out_point_cloud_->attribute(tex_att1_id_)
+          ->SetPointMapEntry(vert_id, AttributeValueIndex(indices[1] - 1));
+    } else if (indices[1] < 0) {
+      out_point_cloud_->attribute(tex_att1_id_)
+          ->SetPointMapEntry(vert_id,
+                             AttributeValueIndex(num_tex_coords1_ + indices[1]));
+    } else {
+      // Texture index not provided but expected. Insert 0 entry as the
+      // default value.
+      out_point_cloud_->attribute(tex_att1_id_)
           ->SetPointMapEntry(vert_id, AttributeValueIndex(0));
     }
   }

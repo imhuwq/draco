@@ -71,6 +71,7 @@ class ObjDecoder {
   bool ParseVertexPosition(Status *status);
   bool ParseNormal(Status *status);
   bool ParseTexCoord(Status *status);
+  bool ParseTexCoord1(Status *status);
   bool ParseFace(Status *status);
   bool ParseMaterialLib(Status *status);
   bool ParseMaterial(Status *status);
@@ -95,12 +96,14 @@ class ObjDecoder {
   int num_obj_faces_;
   int num_positions_;
   int num_tex_coords_;
+  int num_tex_coords1_;
   int num_normals_;
   int num_materials_;
   int last_sub_obj_id_;
 
   int pos_att_id_;
   int tex_att_id_;
+  int tex_att1_id_;
   int norm_att_id_;
   int material_att_id_;
   int sub_obj_att_id_;  // Attribute id for storing sub-objects.

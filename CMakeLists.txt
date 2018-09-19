@@ -1177,3 +1177,6 @@ endif ()
 
 # Generate $draco_build_dir/draco/draco_features.h.
 draco_generate_features_h()
+
+add_executable(play play.cpp)
+target_link_libraries(play dracodec dracoenc)
